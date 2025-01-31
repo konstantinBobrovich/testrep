@@ -5,9 +5,13 @@ pipeline {
         }
     }
     stages {
-        stage('Test') {
+        stage('build') {
             steps {
                 bat 'echo Hello world, KB > test.txt'
+            }
+        }
+        stage('Test') {
+            steps {
                 bat 'type test.txt'
             }
         }
