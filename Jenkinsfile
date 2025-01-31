@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                echo "Hello world, KB" >> test.txt
+                bat 'echo Hello world, KB > test.txt'
+                bat 'type test.txt
             }
         }
     }
