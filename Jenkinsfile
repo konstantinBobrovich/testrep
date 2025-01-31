@@ -5,11 +5,9 @@ pipeline {
         }
     }
     stages {
-        stage('Clone Test') {
+        stage('Test') {
             steps {
                 echo "Hello world, KB" >> test.txt
-                echo "fromfile:"
-                cat test.txt
             }
         }
     }
