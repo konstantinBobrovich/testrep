@@ -1,15 +1,9 @@
-parameters {
-}
-
 pipeline {
     agent {
         node {
             label 'Built-In Node' // SATest002
         } // node
     } // agent
-    environment {
-
-    }
     stages {
         stage('Clone Test') {
             steps {
